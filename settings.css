@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  color: #333;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #0078d7;
+}
+
+.settings {
+  max-width: 700px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.settings h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1c1c1d;
+}
+
+.section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(245, 245, 245, 0.9);
+  border-radius: 10px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  color: #131313;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  color: #444;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+.save {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.save button {
+  padding: 12px 25px;
+  background: #353637;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.save button:hover {
+  background: #dde2e5;
+  transform: translateY(-2px);
+  color: black;
+}

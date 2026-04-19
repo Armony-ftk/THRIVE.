@@ -16,7 +16,7 @@ body {
   text-align: center;
 }
 
-.top-text a {
+/* .top-text a {
   color: #007bff;
   text-decoration: none;
   font-weight: 500;
@@ -24,7 +24,7 @@ body {
 
 .top-text a:hover {
   text-decoration: underline;
-} */
+} */ 
 
 input {
   width: 100%;
@@ -43,7 +43,23 @@ input:focus {
   box-shadow: 0 0 5px rgba(59, 61, 63, 0.3);
 }
 
-/* Buttons */
+/* Buttons */input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  color: #333;
+}
+
+input:focus {
+  border-color: #686c70;
+  outline: none;
+  box-shadow: 0 0 5px rgba(59, 61, 63, 0.3);
+}
+
 button {
   width: 100%;
   padding: 12px;

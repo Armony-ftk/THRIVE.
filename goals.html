@@ -3,30 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goals page</title>
+    <title>Thrive.com - goals</title>
     <link rel="stylesheet" href="goals.css">
 </head>
 <body>
+        <nav>
+            <h1 id="logo">thrive</h1>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Goals</a></li>
+            <li><a href="#">Daily Tasks</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><a href="#">Thrive with AI</a></li>
+            <li><a href="#">profile</a></li>
+            <li><a href="#">settings</a></li>
+        </ul>
+    </nav>
 
-      <nav class="navbar">
+    <h1>Goals</h1>
 
-    <a class="navbar__logo" href="dashboard.html">thrive.</a>
-    <div class="navbar__links">
-      <a class="navbar__link" href="dashboard.html">Dashboard</a>
-      <a class="navbar__link" href="goals.html">Goals</a>
-      <a class="navbar__link active" href="tasks.html">Daily tasks</a>
-      <a class="navbar__link" href="progress.html">Progress</a>
-      <a class="navbar__link" href="ai.html">Thrive with AI</a>
+  <div class="goals">
+    <div class="card">
+      <h2>Skills</h2>
+      <h3>Master Python</h3>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <p class="deadline">Deadline: 28/05/2026</p>
+      <div class="milestones">
+        <strong>Milestones:</strong>
+        <ul>
+          <li>Complete Introduction to Python</li>
+          <li>Variable Declaration</li>
+          <li>Conditional Statements</li>
+        </ul>
+      </div>
     </div>
-    
-    <div class="navbar__actions">
-      <button class="navbar__icon-btn" aria-label="Settings">
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="2.5" stroke="rgba(60,40,140,0.6)" stroke-width="1.2"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M11.5 3.4l-1.1 1.1M4.5 11.5l-1.1 1.1" stroke="rgba(60,40,140,0.6)" stroke-width="1.2" stroke-linecap="round"/></svg>
-      </button>
-      <a class="navbar__avatar" href="profile.html">EM</a>
+
+    <div class="card">
+      <h2>Education</h2>
+      <h3>Learn Spanish</h3>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <p class="deadline">Deadline: 01/09/2026</p>
     </div>
-  </nav>
-    <h1>Dintle</h1>
-    
+
+    <div class="card">
+      <h2>Fitness</h2>
+      <h3>Complete Marathon Training</h3>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <p class="deadline">Deadline: 12/07/2026</p>
+    </div>
+
+    <div class="card">
+      <h2>Finance</h2>
+      <h3>Save R10,000</h3>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <p class="deadline">Deadline: 30/12/2026</p>
+    </div>
+
+    <div class="card">
+      <h2>Personal Growth</h2>
+      <h3>Read 5 Books</h3>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <p class="deadline">Deadline: 16/08/2026</p>
+    </div>
+
+    <div class="card">
+      <h2>Hobby</h2>
+      <h3>Gardening</h3>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <p class="deadline">Deadline: 08/06/2026</p>
+      <div class="milestones">
+        <strong>Milestones:</strong>
+        <ul>
+          <li>Weed Garden</li>
+          <li>Buy fertiliser</li>
+          <li>Purchase garden tools</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="add-goal">
+    <button>Add New Goal</button>
+  </div>
+
+  
 </body>
 </html>

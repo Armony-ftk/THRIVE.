@@ -22,7 +22,7 @@ if (toggleConfirm && confirmPassword) {
   });
 }
 
-// Form submission validation
+// Form submission validation + redirect
 const signUpForm = document.querySelector("form");
 if (signUpForm) {
   signUpForm.addEventListener("submit", (e) => {
@@ -33,6 +33,7 @@ if (signUpForm) {
       return;
     }
 
-    alert("Sign Up successful!");
+    // Redirect to dashboard.html after successful sign up
+    window.location.href = "dashboard.html";
   });
 }

@@ -1,9 +1,7 @@
 @import "global.css";
 @import "layout.css";
 
-/* =========================
-   GOALS PAGE
-========================= */
+*/
 
 .welcome-header {
   text-align: center;
@@ -23,9 +21,9 @@
   font-style: italic;
 }
 
-/* =========================
+/* ===========
    GOALS GRID
-========================= */
+======== */
 
 .goals-grid {
   display: grid;
@@ -33,9 +31,9 @@
   gap: 16px;
 }
 
-/* =========================
+/* ===============
    GOAL CARD (GLASS STYLE)
-========================= */
+*/
 
 .goal-card {
   padding: 20px;
@@ -81,9 +79,9 @@
   color: var(--coral);
 }
 
-/* =========================
+/* =====
    PROGRESS BAR
-========================= */
+=======*/
 
 .progress-track {
   height: 6px;
@@ -110,9 +108,9 @@
   background: linear-gradient(90deg, #fb7185, #f0607a);
 }
 
-/* =========================
+/* ==
    MILESTONES
-========================= */
+=*/
 
 .milestones-area {
   margin-top: 10px;
@@ -143,9 +141,9 @@
   color: var(--text-3);
 }
 
-/* =========================
+/* ===
    ACTION BUTTON
-========================= */
+ */
 
 .action-footer {
   margin-top: 24px;

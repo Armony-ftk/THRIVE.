@@ -113,9 +113,8 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   box-shadow: 0 8px 36px rgba(100,80,200,0.14), inset 0 1px 0 rgba(255,255,255,0.95);
 }
 
-/* ─────────────────────────────────────────
-   BADGES
-───────────────────────────────────────── */
+/* ──────
+   BADGES*/
 .badge {
   display: inline-flex; align-items: center;
   font-size: 10px; font-weight: 600;
@@ -126,9 +125,9 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .badge-teal   { background:var(--teal-light);   color:var(--teal);   border:1px solid rgba(43,191,164,.28); }
 .badge-coral  { background:var(--coral-light);  color:var(--coral);  border:1px solid var(--coral-mid); }
 
-/* ─────────────────────────────────────────
+/* 
    PROGRESS BARS
-───────────────────────────────────────── */
+─────────────────── */
 .progress-track {
   height: 5px; background: rgba(124,106,238,0.10);
   border-radius: var(--r-pill); overflow: hidden;
@@ -140,9 +139,9 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .fill-violet { background:linear-gradient(90deg,#a78bfa,#7c6aee); box-shadow:0 0 8px rgba(124,106,238,.4); }
 .fill-teal   { background:linear-gradient(90deg,#34d399,#2bbfa4); box-shadow:0 0 8px rgba(43,191,164,.38); }
 
-/* ─────────────────────────────────────────
+/* ────
    PULSE DOT
-───────────────────────────────────────── */
+─── */
 .pulse-dot {
   width:7px; height:7px; border-radius:50%;
   background:var(--teal); box-shadow:0 0 8px rgba(43,191,164,.6);

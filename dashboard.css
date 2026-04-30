@@ -8,15 +8,12 @@
   z-index: 2;
   min-height: 100vh;
   display: flex;
-  padding: 20px 20px 20px 0; /* breathing room around sidebar */
-  gap: 20px;
+  padding: 20px 20px 20px 0; 
 }
 
-/* ─────────────────────────────────────────
-   FLOATING SIDEBAR  (Ether-style)
-───────────────────────────────────────── */
+
 .sidebar {
-  /* Float: doesn't stretch full height */
+ 
   position: sticky;
   top: 20px;
   align-self: flex-start;
@@ -138,7 +135,7 @@
   border: 1px solid var(--violet-mid);
 }
 
-/* Active left-edge pill indicator */
+/* Active indicator */
 .sb-item.active::before {
   content: '';
   position: absolute;
@@ -185,20 +182,15 @@
 }
 .sb-avatar:hover { box-shadow: 0 4px 20px rgba(124,106,238,0.55); }
 
-/* ─────────────────────────────────────────
-   MAIN COLUMN
-───────────────────────────────────────── */
+
 .main-col {
   flex: 1;
   display: flex;
   flex-direction: column;
   min-width: 0;
-  padding-right: 4px; /* tiny right breathing room */
+  padding-right: 4px; 
 }
 
-/* ─────────────────────────────────────────
-   TOP BAR
-───────────────────────────────────────── */
 .topbar {
   position: sticky; top: 20px; z-index: 40;
   height: 56px;
@@ -212,7 +204,7 @@
   margin-bottom: 24px;
 }
 
-/* Rainbow top hairline */
+
 .topbar::before {
   content: '';
   position: absolute;
@@ -253,12 +245,10 @@
   letter-spacing: .5px; text-transform: uppercase; white-space: nowrap;
 }
 
-/* ─────────────────────────────────────────
-   PAGE CONTENT
-───────────────────────────────────────── */
+
 .content { flex: 1; }
 
-/* ── Welcome header (centered) ─────────── */
+
 .welcome {
   text-align: center;
   margin-bottom: 28px;
@@ -280,7 +270,7 @@
   font-style: italic; font-weight: 300;
 }
 
-/* ── Section label ──────────────────────── */
+
 .section-label {
   font-size: 10px; font-weight: 600;
   text-transform: uppercase; letter-spacing: 1.2px;
@@ -288,9 +278,7 @@
   text-align: center;
 }
 
-/* ─────────────────────────────────────────
-   STAT CARDS ROW
-───────────────────────────────────────── */
+/* STAT CARDS ROW */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -305,7 +293,7 @@
 }
 .stat-card:hover { transform: translateY(-3px); }
 
-/* Corner radial glow */
+
 .stat-card::after {
   content: '';
   position: absolute; top: 0; right: 0;
@@ -356,9 +344,7 @@
 .s-teal   .stat-sub { color: rgba(6,95,70,.6); }
 .s-coral  .stat-sub { color: rgba(159,18,57,.6); }
 
-/* ─────────────────────────────────────────
-   CONTENT GRID
-───────────────────────────────────────── */
+
 .content-grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -366,9 +352,7 @@
 }
 .col { display: flex; flex-direction: column; gap: 18px; }
 
-/* ─────────────────────────────────────────
-   CARD INTERIOR HELPERS
-───────────────────────────────────────── */
+
 .card-pad { padding: 22px 24px; }
 
 .card-header {
@@ -384,9 +368,7 @@
 }
 .card-link:hover { opacity: 1; }
 
-/* ─────────────────────────────────────────
-   TASK LIST
-───────────────────────────────────────── */
+
 .task-row {
   display: flex; align-items: center; gap: 11px;
   padding: 10px 0;
@@ -408,9 +390,7 @@
 .task-name { font-size: 13px; flex: 1; color: var(--text); font-weight: 400; }
 .task-name.done { text-decoration: line-through; color: var(--text-3); }
 
-/* ─────────────────────────────────────────
-   GOAL PROGRESS
-───────────────────────────────────────── */
+
 .goal-row {
   display: flex; flex-direction: column; gap: 8px;
   padding: 11px 0; border-bottom: 1px solid rgba(124,106,238,.07);
@@ -420,9 +400,7 @@
 .goal-info { display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: var(--text-2); }
 .goal-info .pct { font-family: var(--ff-body); font-weight: 600; font-size: 12px; color: var(--text); }
 
-/* ─────────────────────────────────────────
-   MOTIVATION CARD
-───────────────────────────────────────── */
+
 .card.motive {
   background: linear-gradient(135deg, rgba(167,139,250,.22), rgba(96,165,250,.13));
   border-color: rgba(167,139,250,.42);
@@ -447,9 +425,7 @@
 }
 .motive-author { display: block; margin-top: 10px; font-size: 11px; color: var(--text-2); }
 
-/* ─────────────────────────────────────────
-   STREAK CARD
-───────────────────────────────────────── */
+
 .streak-num {
   font-family: var(--ff-display);
   font-size: 54px; font-weight: 400;
@@ -472,9 +448,8 @@
 }
 .streak-day span { font-size: 9px; color: var(--text-3); font-weight: 600; letter-spacing: .5px; text-transform: uppercase; }
 
-/* ─────────────────────────────────────────
-   RISK ALERT CARD
-───────────────────────────────────────── */
+
+
 .card.risk {
   background: linear-gradient(135deg, rgba(240,96,122,.10), rgba(240,96,122,.04));
   border-color: rgba(240,96,122,.26);
@@ -511,9 +486,7 @@
 }
 .risk-btn:hover { background: rgba(124,106,238,.2); color: #3b0764; }
 
-/* ─────────────────────────────────────────
-   FOOTER
-───────────────────────────────────────── */
+
 .page-footer {
   margin-top: 24px;
   display: flex; align-items: center; justify-content: space-between;
@@ -537,9 +510,7 @@
 }
 .social-btn:hover { background: rgba(255,255,255,.85); color: var(--text); }
 
-/* ─────────────────────────────────────────
-   FADE-UP DELAYS for content children
-───────────────────────────────────────── */
+
 .content > *:nth-child(1) { animation-delay: .04s; }
 .content > *:nth-child(2) { animation-delay: .10s; }
 .content > *:nth-child(3) { animation-delay: .16s; }
@@ -547,9 +518,7 @@
 .content > *:nth-child(5) { animation-delay: .28s; }
 .content > *:nth-child(6) { animation-delay: .34s; }
 
-/* ─────────────────────────────────────────
-   RESPONSIVE
-───────────────────────────────────────── */
+
 @media (max-width: 900px) {
   .shell          { padding: 12px; gap: 12px; }
   .sidebar        { display: none; }
